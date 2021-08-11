@@ -29,7 +29,6 @@ public class MyShurikenArrangement : MonoBehaviour
 
     private void Update()
     {
-
     }
 
     private void OnMouseDrag()
@@ -42,22 +41,36 @@ public class MyShurikenArrangement : MonoBehaviour
     /// </summary>
     void OnMyShurikenArranging()
     {
-        // 時間測定開始
-
         // ↓の処理にif文でMyArea_Panelの4隅の座標以内であれば処理をするように作る
-        // 最後の作業：MyAreaInfo.heightとwidth作成完了
 
-        // タッチ情報の取得
-        Touch[] myTouches = Input.touches;
+        // 必要情報：
+        // 上端のy座標と下端のy座標
+        // 左端のｘ座標と右端のx座標
 
-        // タッチ数ぶんループ
-        for (int i = 0; i < myTouches.Length; i++)
-        {
-            // タッチ座標のワールド座標を取得
-            Vector2 touchPosition = Camera.main.ScreenToWorldPoint(myTouches[i].position);
+        // 最後の作業：
+        // 1 MyAreaのtopLeftPos作成
 
-            // 自分手裏剣の座標にタッチ座標を設定する
-            this.transform.position = touchPosition;
-        }
+        // タスク：
+        // MyArea内の条件文作成
+        // ドラッグ条件下の時間測定作成
+        // 目標作業：少なくとも1を作り終える
+
+        // if (this.transform.position < )
+        // {
+        //     // 時間測定開始
+        //
+        //     // タッチ情報の取得
+        //     Touch[] myTouches = Input.touches;
+        //
+        //     // タッチ数ぶんループ
+        //     for (int i = 0; i < myTouches.Length; i++)
+        //     {
+        //         // タッチ座標のワールド座標を取得
+        //         Vector2 touchPosition = Camera.main.ScreenToWorldPoint(myTouches[i].position);
+        //
+        //         // 自分手裏剣の座標にタッチ座標を設定する
+        //         this.transform.position = touchPosition;
+        //     }
+        // }
     }
 }

@@ -3,16 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="9dd3cf36-80bc-4b7d-a7be-052cac52de74" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SujiShuriken/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SujiShuriken/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyArea_Image/Scripts/MyAreaInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyArea_Image/Scripts/MyAreaInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenArrangement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenArrangement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/TestForThrowingMyShuriken 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/TestForThrowingMyShuriken 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documents/Design_Algorithm.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Documents/Design_Algorithm.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Documents/ThrowSujiShurikenGanttChart.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Documents/ThrowSujiShurikenGanttChart.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documents/isSwipingがtrueにならないのはなぜ？.xmind" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documents/~$しゅりけんざん_プロジェクト計画書.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documents/しゅりけんざん_プロジェクト計画書.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documents/スロー数字手裏剣クラス設計.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Documents/スロー数字手裏剣クラス設計.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documents/スロー数字手裏剣企画書_20210101.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/Documents/スロー数字手裏剣企画書_20210101.pptx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documents/スロー数字手裏剣設計書.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Documents/スロー数字手裏剣設計書.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documents/~$ThrowSujiShurikenGanttChart.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documents/~$スロー数字手裏剣クラス設計.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documents/~$スロー数字手裏剣設計書.xlsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +37,8 @@
       <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/Common/Scripts/Tag.cs" />
       <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyArea_Image/Scripts/MyArea_WedthAndHight.cs" />
       <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/Common/Scripts/GameObjectName.cs" />
-      <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyArea_Image/Scripts/MyAreaInfo.cs" />
       <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenArrangement.cs" />
+      <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyArea_Image/Scripts/MyAreaInfo.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1w9hXKPkxSvuygWYpRovyDjvc31" />
@@ -101,7 +97,7 @@
       <workItem from="1627946465629" duration="727000" />
       <workItem from="1628283905062" duration="3361000" />
       <workItem from="1628368654518" duration="2853000" />
-      <workItem from="1628466166991" duration="9483000" />
+      <workItem from="1628466166991" duration="14820000" />
     </task>
     <servers />
   </component>

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 /// <summary>
@@ -7,6 +8,9 @@ using UnityEngine;
 /// </summary>
 public static class MyAreaInfo
 {
+    public static Vector3 topLeftPos = Vector3.zero;
+    public static Vector3 bottomRightPos = Vector3.zero;
+
     public static float width = 0.0f;
     public static float height = 0.0f;
 
@@ -14,6 +18,35 @@ public static class MyAreaInfo
     {
         SetWidth();
         SetHeight();
+
+        SetBottomRightPos();
+        SetTopLeftPos();
+    }
+
+    static void SetTopLeftPos()
+    {
+        GameObject myArea_Image = GameObject.Find(GameObjectName.myArea_Image);
+
+        // topLeftPosX = (MyAreaのposX - (MyAreaの幅 / 2))
+        float topLeftPosX = myArea_Image.transform.position.x - (width / 2);
+
+        // topLeftPosY = (MyAreaのposY + (MyAreaの高さ / 2))
+        float topLeftPosY = myArea_Image.transform.position.y + (height / 2);
+
+        topLeftPos = new Vector3(topLeftPosX, topLeftPosY, 0.0f);
+    }
+
+    static void SetBottomRightPos()
+    {
+        GameObject myArea_Image = GameObject.Find(GameObjectName.myArea_Image);
+
+        // bottomRightPosX = (MyAreaのposX + (MyAreaの幅 / 2))
+        float bottomRightPosX = myArea_Image.transform.position.x + (width / 2);
+
+        // BottomRightPosY = (MyAreaのposY - (MyAreaの高さ / 2))
+        float bottomRightPosY = myArea_Image.transform.position.y - (height / 2);
+
+        bottomRightPos = new Vector3(bottomRightPosX, bottomRightPosY, 0.0f);
     }
 
     static void SetWidth()
