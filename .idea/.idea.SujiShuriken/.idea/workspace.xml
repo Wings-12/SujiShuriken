@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9dd3cf36-80bc-4b7d-a7be-052cac52de74" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SujiShuriken/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SujiShuriken/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenArrangement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenArrangement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/TestForThrowingMyShuriken 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/TestForThrowingMyShuriken 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documents/ThrowSujiShurikenGanttChart.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Documents/ThrowSujiShurikenGanttChart.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +93,7 @@
       <workItem from="1628368654518" duration="2853000" />
       <workItem from="1628466166991" duration="18915000" />
       <workItem from="1628893906639" duration="2240000" />
-      <workItem from="1628926172966" duration="426000" />
+      <workItem from="1628926172966" duration="1824000" />
     </task>
     <servers />
   </component>
