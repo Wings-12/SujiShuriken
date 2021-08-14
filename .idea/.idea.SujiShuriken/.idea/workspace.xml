@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="9dd3cf36-80bc-4b7d-a7be-052cac52de74" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SujiShuriken/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SujiShuriken/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyArea_Image/Scripts/MyAreaInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyArea_Image/Scripts/MyAreaInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenArrangement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenArrangement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/TestForThrowingMyShuriken 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/TestForThrowingMyShuriken 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Documents/ThrowSujiShurikenGanttChart.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Documents/ThrowSujiShurikenGanttChart.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documents/~$ThrowSujiShurikenGanttChart.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documents/~$スロー数字手裏剣クラス設計.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documents/~$スロー数字手裏剣設計書.xlsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +34,8 @@
       <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/Common/Scripts/Tag.cs" />
       <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyArea_Image/Scripts/MyArea_WedthAndHight.cs" />
       <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/Common/Scripts/GameObjectName.cs" />
-      <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenArrangement.cs" />
       <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyArea_Image/Scripts/MyAreaInfo.cs" />
+      <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenArrangement.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1w9hXKPkxSvuygWYpRovyDjvc31" />
@@ -74,10 +71,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="10261">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="10261" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -97,7 +94,9 @@
       <workItem from="1627946465629" duration="727000" />
       <workItem from="1628283905062" duration="3361000" />
       <workItem from="1628368654518" duration="2853000" />
-      <workItem from="1628466166991" duration="14820000" />
+      <workItem from="1628466166991" duration="18915000" />
+      <workItem from="1628893906639" duration="2240000" />
+      <workItem from="1628926172966" duration="426000" />
     </task>
     <servers />
   </component>
