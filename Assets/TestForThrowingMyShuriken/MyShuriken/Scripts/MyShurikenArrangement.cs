@@ -46,56 +46,34 @@ public class MyShurikenArrangement : MonoBehaviour
     /// </summary>
     void OnMyShurikenArranging()
     {
-        // ↓の処理にif文でMyArea_Panelの4隅の座標以内であれば処理をするように作る
-
-        // 必要情報：
-        // 上端のy座標と下端のy座標
-        // 左端のｘ座標と右端のx座標
-
         // 最後の作業：
-        // 1 MyAreaのtopLeftPos作成
+        // MyArea_Image内でタッチした場合に修正
 
         // タスク：
-        // MyArea内の条件文作成
-        // ドラッグ条件下の時間測定作成
+        // ドラッグ中にフラグを立ててスワイプ処理をしないようにする
         // 目標作業：少なくとも1を作り終える
 
-        // MyArea_Image内に自分手裏剣がある場合
-        if (MyAreaInfo.topLeftPos.x <= this.transform.position.x && this.transform.position.x <= MyAreaInfo.bottomRightPos.x
-        &&
-        MyAreaInfo.bottomRightPos.y <= this.transform.position.y && this.transform.position.y <= MyAreaInfo.topLeftPos.y)
+        // タッチ情報の取得
+        Touch[] myTouches = Input.touches;
+        Vector2 touchPosition = Vector2.zero;
+
+        // タッチ数ぶんループ
+        for (int i = 0; i < myTouches.Length; i++)
         {
-            // 問題：
-            // 左下に手裏剣をドラッグすると手裏剣が消える
-
-            // 事実
-            // 上端、左端、右端でのドラッグ時では手裏剣は消えない
-            // 下端ドラッグしたときに消える
-
-            // 推測
-            // エリア外には出ていない 理由：エリア外に出たらelseの処理でshuriken1IniPosに戻るはずだから。
-
-            // 時間測定開始
-
-            // タッチ情報の取得
-            Touch[] myTouches = Input.touches;
-
-            // タッチ数ぶんループ
-            for (int i = 0; i < myTouches.Length; i++)
-            {
-                // タッチ座標のワールド座標を取得
-                Vector2 touchPosition = Camera.main.ScreenToWorldPoint(myTouches[i].position);
-
-                // 自分手裏剣の座標にタッチ座標を設定する
-                this.transform.position = touchPosition;
-
-                // 自分手裏剣の座標を更新したのでShuriken1Positionを更新
-                Shuriken1Position = this.transform.position;
-            }
+            // タッチ座標のワールド座標を取得
+            touchPosition = Camera.main.ScreenToWorldPoint(myTouches[i].position);
         }
-        else
+
+        // タッチ座標がMyArea_Image内にある場合
+        if (MyAreaInfo.topLeftPos.x <= touchPosition.x && touchPosition.x <= MyAreaInfo.bottomRightPos.x
+                                                       &&
+           MyAreaInfo.bottomRightPos.y <= touchPosition.y && touchPosition.y <= MyAreaInfo.topLeftPos.y)
         {
-            this.transform.position = shuriken1IniPos;
+            // 自分手裏剣の座標にタッチ座標を設定する
+            this.transform.position = touchPosition;
+
+            // 自分手裏剣の座標を更新したのでShuriken1Positionを更新
+            Shuriken1Position = this.transform.position;
         }
     }
 }

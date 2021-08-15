@@ -51,8 +51,6 @@ public class MyShurikenThrower : MonoBehaviour
     /// </summary>
     private void OnMouseEnter()
     {
-        Debug.Log("コライダに入った");
-
         touchEventDisplayer.DisplayWhichEventCalled("コライダに入った");
 
         // 自分手裏剣をタッチし始めたときの座標を取得する
@@ -81,8 +79,6 @@ public class MyShurikenThrower : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log("コライダを押した");
-
         Set_touchBeganPosition();
     }
 
@@ -119,8 +115,6 @@ public class MyShurikenThrower : MonoBehaviour
 
     private void OnMouseUp()
     {
-        Debug.Log("コライダから離れた");
-
         // touchphase.Movedの場合にタッチ終了座標更新
         // 理由：PointerExitで手裏剣のタッチが終わる直前のタッチ座標を取得したいから
         Touch[] myTouches = Input.touches;
