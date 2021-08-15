@@ -4,8 +4,7 @@
     <list default="true" id="9dd3cf36-80bc-4b7d-a7be-052cac52de74" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SujiShuriken/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SujiShuriken/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenArrangement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenArrangement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenThrower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenThrower.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documents/ThrowSujiShurikenGanttChart.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Documents/ThrowSujiShurikenGanttChart.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documents/スロー数字手裏剣設計書.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Documents/スロー数字手裏剣設計書.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +34,7 @@
       <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyArea_Image/Scripts/MyArea_WedthAndHight.cs" />
       <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/Common/Scripts/GameObjectName.cs" />
       <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyArea_Image/Scripts/MyAreaInfo.cs" />
+      <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenInstantiator.cs" />
       <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenThrower.cs" />
       <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenArrangement.cs" />
     </changedPaths>
@@ -98,7 +98,7 @@
       <workItem from="1628466166991" duration="18915000" />
       <workItem from="1628893906639" duration="2240000" />
       <workItem from="1628926172966" duration="1824000" />
-      <workItem from="1629010414641" duration="2368000" />
+      <workItem from="1629010414641" duration="6389000" />
     </task>
     <servers />
   </component>

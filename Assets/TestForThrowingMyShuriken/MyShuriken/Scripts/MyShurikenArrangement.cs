@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Xml;
 using UnityEngine;
 
@@ -15,6 +16,10 @@ public class MyShurikenArrangement : MonoBehaviour
     /// 自分手裏剣1の座標
     /// </summary>
     private Vector2 shuriken1Position;
+
+    private float dragMeasureTime = 0.0f;
+
+    private bool has1secondPassed = false;
 
     /// <summary>
     /// 自分手裏剣1の座標のプロパティ
@@ -34,6 +39,7 @@ public class MyShurikenArrangement : MonoBehaviour
 
     private void Update()
     {
+        has1secondPassed = false;
     }
 
     private void OnMouseDrag()
@@ -50,7 +56,7 @@ public class MyShurikenArrangement : MonoBehaviour
         // MyArea_Image内でタッチした場合に修正
 
         // タスク：
-        // ドラッグ中にフラグを立ててスワイプ処理をしないようにする
+        // 1秒時間計測してドラッグする処理を作る
         // 目標作業：少なくとも1を作り終える
 
         // タッチ情報の取得
@@ -64,10 +70,21 @@ public class MyShurikenArrangement : MonoBehaviour
             touchPosition = Camera.main.ScreenToWorldPoint(myTouches[i].position);
         }
 
-        // タッチ座標がMyArea_Image内にある場合
+        // 1秒たつ
+        dragMeasureTime += Time.deltaTime;
+
+        // ドラッグ移動OKのフラグを立てる　（ドラッグ移動されていないときはUpdate内でフラグを立てる）
+        if (dragMeasureTime >= 1.0f)
+        {
+            has1secondPassed = true;
+        }
+
+        // タッチ座標がMyArea_Image内にある場合かつ、ドラッグ移動
         if (MyAreaInfo.topLeftPos.x <= touchPosition.x && touchPosition.x <= MyAreaInfo.bottomRightPos.x
                                                        &&
-           MyAreaInfo.bottomRightPos.y <= touchPosition.y && touchPosition.y <= MyAreaInfo.topLeftPos.y)
+            MyAreaInfo.bottomRightPos.y <= touchPosition.y && touchPosition.y <= MyAreaInfo.topLeftPos.y
+                                                       &&
+            has1secondPassed == true)
         {
             // 自分手裏剣の座標にタッチ座標を設定する
             this.transform.position = touchPosition;
@@ -75,5 +92,10 @@ public class MyShurikenArrangement : MonoBehaviour
             // 自分手裏剣の座標を更新したのでShuriken1Positionを更新
             Shuriken1Position = this.transform.position;
         }
+    }
+
+    private void OnMouseUp()
+    {
+        dragMeasureTime = 0.0f;
     }
 }
