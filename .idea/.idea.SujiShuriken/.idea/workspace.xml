@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dd3cf36-80bc-4b7d-a7be-052cac52de74" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/NewBehaviourScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SujiShuriken/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SujiShuriken/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenArrangement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenArrangement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documents/スロー数字手裏剣設計書.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Documents/スロー数字手裏剣設計書.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/MyShuriken1_Button 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/MyShuriken1_Button 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenInstantiator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenInstantiator.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/NewBehaviourScript.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenThrower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenThrower.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/TestForThrowingMyShuriken 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/TestForThrowingMyShuriken 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documents/~$BugReports.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documents/手裏剣を投げるときにドラッグしてしまう場合があり、 その場合に手裏剣が移動してしまう.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/Documents/手裏剣を投げるときにドラッグしてしまう場合があり、 その場合に手裏剣が移動してしまう.xmind" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,10 +29,51 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.2.18/Editor/treeview/TimelineTreeViewGUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/58F09AA9-597A-4DC5-A992-46E500618721/4f/8ad23256/ProfilerWindow.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EAE584CE-26BC-4022-9C1B-1AA476BFA589/9f/da282c0c/CultureInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B274A51D-3084-44F8-A3F3-C239CE035557/eb/37da993d/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4F60C669-1E7F-4344-AAF2-57D38A2B0259/1b/a5535382/Panel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EAE584CE-26BC-4022-9C1B-1AA476BFA589/3b/157b6044/TimeSpan.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EF151B6A-BB5D-474C-B2C1-CB8906A8B5A4/11/cb525f56/Regex.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/58F09AA9-597A-4DC5-A992-46E500618721/7c/1efe6535/RetainedMode.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B274A51D-3084-44F8-A3F3-C239CE035557/9e/3548575f/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file:///Applications/Unity/Hub/Editor/2019.4.22f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Tests/Runtime/MaskClipping/RectMask2DClipping.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/58F09AA9-597A-4DC5-A992-46E500618721/fb/4212c365/JSProxyMgr.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.2.18/Editor/inspectors/AnimationPlayableAssetInspector.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file:///Applications/Unity/Hub/Editor/2019.4.22f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D76DA2C9-A45B-4B02-B93F-56AE560B1D44/04/75f6fdb6/ADB.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/58F09AA9-597A-4DC5-A992-46E500618721/8f/97433021/PopupWindowWithoutFocus.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file:///Applications/Unity/Hub/Editor/2019.4.22f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Graphic.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file:///Applications/Unity/Hub/Editor/2019.4.22f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyArea_Image/Scripts/MyAreaInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/Common/Scripts/Tag.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B274A51D-3084-44F8-A3F3-C239CE035557/f1/47864aa2/OnDemandRendering.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/58F09AA9-597A-4DC5-A992-46E500618721/7e/0e06b692/HostView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file:///Applications/Unity/Hub/Editor/2019.4.22f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Tests/Runtime/Layout/HorizonalLayoutGroupTests.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EF151B6A-BB5D-474C-B2C1-CB8906A8B5A4/2a/a72fc51a/RegexParser.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/02C75F60-443C-4B27-B19F-D3060D5AF6AD/a6/dabb07e6/GUIUtility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/58F09AA9-597A-4DC5-A992-46E500618721/0d/b880a1cc/EditorApplication.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file:///Applications/Unity/Hub/Editor/2019.4.22f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Tests/Runtime/Layout/LayoutGroupScaling.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/58F09AA9-597A-4DC5-A992-46E500618721/40/e161ab16/EditorApplicationLayout.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/58F09AA9-597A-4DC5-A992-46E500618721/77/3e467965/RootEditorUtils.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EF97A857-A77F-4229-885C-0ED3B980BD37/a1/cc307008/Canvas.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/58F09AA9-597A-4DC5-A992-46E500618721/8b/783e2e95/EditorCompilationInterface.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/Common/Scripts/GameObjectName.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/02C75F60-443C-4B27-B19F-D3060D5AF6AD/44/a3cc4137/Event.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file:///Applications/Unity/Hub/Editor/2019.4.22f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.2d.sprite/Editor/SpriteEditorModule/SpriteEditorData.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/Noise/noise4D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B274A51D-3084-44F8-A3F3-C239CE035557/21/1d40c7c9/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/817A237D-064B-4347-A72A-677C916A1C6B/c6/af785fb5/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B274A51D-3084-44F8-A3F3-C239CE035557/93/533cfdec/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B274A51D-3084-44F8-A3F3-C239CE035557/06/b8a900dd/ScriptableRuntimeReflectionSystemWrapper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4F60C669-1E7F-4344-AAF2-57D38A2B0259/df/89a96a2d/Utility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B274A51D-3084-44F8-A3F3-C239CE035557/f7/26d5f725/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B274A51D-3084-44F8-A3F3-C239CE035557/c6/cc293c80/RenderPipelineManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/Common/Scripts/Tag.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B274A51D-3084-44F8-A3F3-C239CE035557/c1/9cd817de/SupportedRenderingFeatures.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EAE584CE-26BC-4022-9C1B-1AA476BFA589/af/04dcf618/Thread.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CA7B14E-B797-446B-8567-5E0434BAF512/25/aaff55c1/SendMouseEvents.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B24CB8E1-AD07-44DE-82CA-A1F19700B301/97/85da4b19/NavMesh.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -34,9 +81,11 @@
       <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyArea_Image/Scripts/MyArea_WedthAndHight.cs" />
       <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/Common/Scripts/GameObjectName.cs" />
       <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyArea_Image/Scripts/MyAreaInfo.cs" />
+      <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenArrangement.cs" />
       <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenInstantiator.cs" />
       <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenThrower.cs" />
-      <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenArrangement.cs" />
+      <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/58F09AA9-597A-4DC5-A992-46E500618721/7c/1efe6535/RetainedMode.cs" />
+      <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/58F09AA9-597A-4DC5-A992-46E500618721/0d/b880a1cc/EditorApplication.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1w9hXKPkxSvuygWYpRovyDjvc31" />
@@ -72,10 +121,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="93191">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="93191" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -121,5 +170,24 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenThrower.cs</url>
+          <line>266</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenThrower.cs" initialLine="283" containingFunctionPresentation="method 'OnMyShuriken1Instantiated'">
+            <startOffsets>
+              <option value="7577" />
+            </startOffsets>
+            <endOffsets>
+              <option value="7700" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

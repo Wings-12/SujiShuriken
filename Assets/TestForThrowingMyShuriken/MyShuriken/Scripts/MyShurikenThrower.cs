@@ -33,9 +33,20 @@ public class MyShurikenThrower : MonoBehaviour
     new Rigidbody2D rigidbody2D;
 
     /// <summary>
-    /// 自分手裏剣が投げられたときのイベント
+    /// 自分手裏剣1のゲームオブジェクト
     /// </summary>
-    public event EventHandler ThrewShuriken;
+    [SerializeField] GameObject myShuriken1;
+
+    /// <summary>
+    /// 自分手裏剣1のプレハブ
+    /// </summary>
+    GameObject myShuriken1_prefab;
+
+    MyShurikenThrower myShurikenThrower;
+
+    [SerializeField] GameObject canvas;
+
+    [SerializeField] MyShurikenArrangement myShurikenArrangement;
 
     #endregion
 
@@ -44,6 +55,8 @@ public class MyShurikenThrower : MonoBehaviour
     private void Start()
     {
         this.rigidbody2D = GetComponent<Rigidbody2D>();
+
+        this.myShurikenThrower = this.myShuriken1.GetComponent<MyShurikenThrower>();
     }
 
     /// <summary>
@@ -241,9 +254,28 @@ public class MyShurikenThrower : MonoBehaviour
         // tan(斜辺の長さ(大きさ)とその向き == (cos(x座標), sin(y座標)))
         this.rigidbody2D.velocity = velocityOfMoveDestination;
 
-        if (this.ThrewShuriken != null)
-        {
-            this.ThrewShuriken(this, EventArgs.Empty);
-        }
+        OnMyShuriken1Instantiated();
+    }
+
+    void OnMyShuriken1Instantiated()
+    {
+       // 問題：インスタンシエイトされているが、生成座標がおかしい？
+       // 座標は問題なさげ。　disableになっている？　ちなみに修正前はインスタンシエイトされた手裏剣はヒエラルキーに表示されてた？
+
+
+        //this.myShuriken1_prefab = Instantiate(this.myShuriken1, this.myShuriken1.transform.position, Quaternion.identity);
+        this.myShuriken1_prefab = Instantiate(this.myShuriken1, this.myShurikenArrangement.Shuriken1Position, Quaternion.identity);
+
+        // これでも原点に生成された。
+        //this.myShuriken1_prefab = Instantiate(this.myShuriken1, new Vector2(-1.848f, -3.945f), Quaternion.identity);
+
+        // ↓こいつのせい？？　SetParentしているときに座標に何か起きてる？
+
+        // UIをInstantiateするときはcanvasをSetParentしないと期待しない座標でInstantiateされることがある模様。
+        // 参考：https://qiita.com/tibe/items/5e1ae977c31cdbec1e60
+        this.myShuriken1_prefab.transform.SetParent(this.canvas.transform, false);
+
+        // SetParentのcanvas座標にInstantiateされているなら、これで座標修正できる？　→　できた
+        this.myShuriken1_prefab.transform.position = this.myShurikenArrangement.Shuriken1Position;
     }
 }
