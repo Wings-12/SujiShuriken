@@ -74,7 +74,7 @@ public class MyShurikenArrangement : MonoBehaviour
         dragMeasureTime += Time.deltaTime;
 
         // ドラッグ移動OKのフラグを立てる　（ドラッグ移動されていないときはUpdate内でフラグを立てる）
-        if (dragMeasureTime >= 1.0f)
+        if (dragMeasureTime >= StandardTime.betweenDragAndSwipe)
         {
             has1secondPassed = true;
         }

@@ -27,11 +27,6 @@ public class MyShurikenThrower : MonoBehaviour
     /// </summary>
     float touchEndedTime;
 
-    ///<summary>
-    ///手裏剣のrigidbody
-    ///</summary>
-    new Rigidbody2D rigidbody2D;
-
     /// <summary>
     /// 自分手裏剣1のゲームオブジェクト
     /// </summary>
@@ -54,8 +49,6 @@ public class MyShurikenThrower : MonoBehaviour
 
     private void Start()
     {
-        this.rigidbody2D = GetComponent<Rigidbody2D>();
-
         this.myShurikenThrower = this.myShuriken1.GetComponent<MyShurikenThrower>();
     }
 
@@ -179,15 +172,15 @@ public class MyShurikenThrower : MonoBehaviour
         // タッチ時間取得
         // 理由：フリック時間判定のため
         float touchingTime = this.touchEndedTime - this.touchBeganTime;
-        //Debug.Log("タッチ時間：" + touchingTime);
+        Debug.Log("タッチ時間：" + touchingTime);
 
         // ①タッチ距離が0.2以上0.4以下でかつ
         // ②タッチ時間がの場合、フリックと判定する
         // ※①、②ともどれくらいの値がよいか調整中。
-        //if (0.1f <= touchDistance && touchDistance <= 4.5f
-        //    &&
-        //    0.01f <= touchingTime && touchingTime <= 0.5f)
-        if (0.1f <= touchDistance && touchDistance <= 4.5f)
+        if (0.1f <= touchDistance && touchDistance <= 4.5f
+            &&
+            0.01f <= touchingTime && touchingTime < StandardTime.betweenDragAndSwipe)
+        //if (0.1f <= touchDistance && touchDistance <= 4.5f)
         {
             // フリックした方向の角度を求める
 
@@ -205,6 +198,7 @@ public class MyShurikenThrower : MonoBehaviour
 
             if (0 <= flickedDirection && flickedDirection <= 180)
             {
+                OnMyShuriken1Instantiated();
                 ThrowShuriken(flickedDirection, 20.0f); 
             }
         }
@@ -251,18 +245,20 @@ public class MyShurikenThrower : MonoBehaviour
         // 移動先座標への角度におけるsinを設定
         velocityOfMoveDestination.y = Mathf.Sin(Mathf.Deg2Rad * flickedDirection) * speed;
 
-        // tan(斜辺の長さ(大きさ)とその向き == (cos(x座標), sin(y座標)))
-        this.rigidbody2D.velocity = velocityOfMoveDestination;
+        Rigidbody2D rigidbody2D = this.myShuriken1_prefab.GetComponent<Rigidbody2D>();
 
-        OnMyShuriken1Instantiated();
+        // 複製した自分手裏剣の位置を移動したり投げたりできないようにする
+        // ※確実に↑が起きないようにしている。基本はドラッグとスワイプをStandardTime.DragAndSwipeによってタッチ時間で
+        // ドラッグ中はスワイプしないように、スワイプ中はドラッグしないようにしているので、起きないと思う。　←　時間があれば、後でテストする。
+        this.myShuriken1_prefab.GetComponent<MyShurikenArrangement>().enabled = false;
+        this.myShuriken1_prefab.GetComponent<MyShurikenThrower>().enabled = false;
+
+        // tan(斜辺の長さ(大きさ)とその向き == (cos(x座標), sin(y座標)))
+        rigidbody2D.velocity = velocityOfMoveDestination;
     }
 
     void OnMyShuriken1Instantiated()
     {
-       // 問題：インスタンシエイトされているが、生成座標がおかしい？
-       // 座標は問題なさげ。　disableになっている？　ちなみに修正前はインスタンシエイトされた手裏剣はヒエラルキーに表示されてた？
-
-
         //this.myShuriken1_prefab = Instantiate(this.myShuriken1, this.myShuriken1.transform.position, Quaternion.identity);
         this.myShuriken1_prefab = Instantiate(this.myShuriken1, this.myShurikenArrangement.Shuriken1Position, Quaternion.identity);
 

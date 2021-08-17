@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dd3cf36-80bc-4b7d-a7be-052cac52de74" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/NewBehaviourScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SujiShuriken/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SujiShuriken/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/MyShuriken1_Button 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/MyShuriken1_Button 1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenInstantiator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenInstantiator.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/NewBehaviourScript.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/NewBehaviourScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/NewBehaviourScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenArrangement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenArrangement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenThrower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenThrower.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/TestForThrowingMyShuriken 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/TestForThrowingMyShuriken 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documents/~$BugReports.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documents/手裏剣を投げるときにドラッグしてしまう場合があり、 その場合に手裏剣が移動してしまう.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/Documents/手裏剣を投げるときにドラッグしてしまう場合があり、 その場合に手裏剣が移動してしまう.xmind" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +43,7 @@
     <setting file="file:///Applications/Unity/Hub/Editor/2019.4.22f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Graphic.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file:///Applications/Unity/Hub/Editor/2019.4.22f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyArea_Image/Scripts/MyAreaInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/Common/Scripts/StandardTime.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B274A51D-3084-44F8-A3F3-C239CE035557/f1/47864aa2/OnDemandRendering.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/58F09AA9-597A-4DC5-A992-46E500618721/7e/0e06b692/HostView.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file:///Applications/Unity/Hub/Editor/2019.4.22f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Tests/Runtime/Layout/HorizonalLayoutGroupTests.cs" root0="SKIP_HIGHLIGHTING" />
@@ -81,11 +78,12 @@
       <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyArea_Image/Scripts/MyArea_WedthAndHight.cs" />
       <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/Common/Scripts/GameObjectName.cs" />
       <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyArea_Image/Scripts/MyAreaInfo.cs" />
-      <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenArrangement.cs" />
       <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenInstantiator.cs" />
-      <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenThrower.cs" />
       <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/58F09AA9-597A-4DC5-A992-46E500618721/7c/1efe6535/RetainedMode.cs" />
       <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/58F09AA9-597A-4DC5-A992-46E500618721/0d/b880a1cc/EditorApplication.cs" />
+      <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/Common/Scripts/StandardTime.cs" />
+      <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenArrangement.cs" />
+      <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenThrower.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1w9hXKPkxSvuygWYpRovyDjvc31" />
@@ -176,13 +174,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenThrower.cs</url>
-          <line>266</line>
+          <line>262</line>
           <properties documentPath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenThrower.cs" initialLine="283" containingFunctionPresentation="method 'OnMyShuriken1Instantiated'">
             <startOffsets>
-              <option value="7577" />
+              <option value="7795" />
             </startOffsets>
             <endOffsets>
-              <option value="7700" />
+              <option value="7918" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />
