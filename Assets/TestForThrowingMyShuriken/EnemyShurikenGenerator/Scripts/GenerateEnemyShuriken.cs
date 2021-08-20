@@ -1,6 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 /// <summary>
 /// 敵手裏剣を自エリアに一定間隔で生成するクラス
@@ -30,6 +33,10 @@ public class GenerateEnemyShuriken : MonoBehaviour
     /// インスタンシエイトした敵手裏剣の親ゲームオブジェクト
     /// </summary>
     [SerializeField] GameObject canvas = default;
+
+    [SerializeField] Text figureText = default;
+
+    private Vector2 initialEnemyShuriken = default;
     #endregion
 
     // Start is called before the first frame update
@@ -37,6 +44,8 @@ public class GenerateEnemyShuriken : MonoBehaviour
     {
         // 以下初期化
         isIntervalForThrowingEnemyShuriken = false;
+
+        initialEnemyShuriken = new Vector2(0.0f, 6.0f);
     }
 
     // Update is called once per frame
@@ -66,17 +75,25 @@ public class GenerateEnemyShuriken : MonoBehaviour
         // 敵手裏剣を複製する
         this.instantiatedEnemyShuriken = Instantiate(
             this.original_enemyShuriken,
-            this.original_enemyShuriken.transform.position,
+            initialEnemyShuriken,
             Quaternion.identity);
 
         // 生成した敵手裏剣の親をキャンバスにし、座標を発射座標に設定する
         // 理由：インスタンシエイトしたUIは親をキャンバスに設定しないと表示されず、
         // また、発射座標を再設定しないと、発射座標から敵手裏剣が飛ばなくなるから
         this.instantiatedEnemyShuriken.transform.SetParent(canvas.transform, false);
-        this.instantiatedEnemyShuriken.transform.position = this.original_enemyShuriken.transform.position;
+        this.instantiatedEnemyShuriken.transform.position = initialEnemyShuriken;
+
+        // インスタンシエイトされた敵手裏剣を自分手裏剣よりも下に描画する
+        // ※Indexを1にしているのは、自エリアよりも上に描画するため
+        this.instantiatedEnemyShuriken.transform.SetSiblingIndex(1);
+
+        // 敵手裏剣の数字をランダムに設定
+        int randomNum = (int)Math.Floor(Random.Range(1.0f, 9.0f));
+        this.figureText.text = randomNum.ToString();
 
         // 敵手裏剣へ瞬間的に力を加えて右方向に飛ばす
-        Vector2 force = new Vector2(Random.Range(-2.0f, 2.0f), -10.0f); // ← X座標を調整して自エリアに敵手裏剣がランダムに飛ぶようにする
+        Vector2 force = new Vector2(Random.Range(-0.5f, 0.5f), -1.0f);
         // https://xr-hub.com/archives/10747 調整したX座標最小・最大値をRandom.Rangeで設定する
         this.instantiatedEnemyShuriken.GetComponent<Rigidbody2D>().AddForce(force, ForceMode2D.Impulse);
 
