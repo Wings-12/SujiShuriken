@@ -980,6 +980,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63fe798ad3363429497e4416207367ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyShurikenDamageTaker: {fileID: 8596902532019493678}
 --- !u!1 &1258426881
 GameObject:
   m_ObjectHideFlags: 0
@@ -1934,7 +1935,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   figureText: {fileID: 8596902530636864575}
-  shurikenDestroyer: {fileID: 1184325488}
 --- !u!58 &8596902532019493679
 CircleCollider2D:
   m_ObjectHideFlags: 0

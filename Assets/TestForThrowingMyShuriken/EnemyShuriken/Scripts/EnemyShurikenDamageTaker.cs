@@ -12,7 +12,9 @@ public class EnemyShurikenDamageTaker : MonoBehaviour
     [FormerlySerializedAs("text")]
     [SerializeField] Text figureText = default;
 
-    [SerializeField] ShurikenDestroyer shurikenDestroyer = default;
+    public delegate void Hp0ShurikenEventHandler(GameObject hp0Shuriken);
+
+    public event Hp0ShurikenEventHandler OnShurikenHpGotTo0;
 
     // private void OnCollisionEnter2D(Collision2D other)
     // {
@@ -44,6 +46,8 @@ public class EnemyShurikenDamageTaker : MonoBehaviour
 
                 int remainingHp = CalculateDamage(damageAount);
 
+                DestroyShurikenIfHpGotTo0(remainingHp, this.gameObject);
+
                 ApplyDamageToText(remainingHp);
             }
             else
@@ -53,13 +57,17 @@ public class EnemyShurikenDamageTaker : MonoBehaviour
         }
     }
 
-    // void DestroyShurikenIfHpGotTo0(int remainingHp, GameObject enemyShuriken)
-    // {
-    //     if (remainingHp == 0)
-    //     {
-    //         shurikenDestroyer.OnShurikenHpGotTo0(enemyShuriken);
-    //     }
-    // }
+    void DestroyShurikenIfHpGotTo0(int remainingHp, GameObject enemyShuriken)
+    {
+        if (remainingHp == 0)
+        {
+            // 本当はイベント処理で手裏剣を1箇所で破棄したいが、バグっているので、ここでDestroyしている
+            //Destroy((enemyShuriken));
+
+            // データが発行されてない？
+            OnShurikenHpGotTo0(enemyShuriken);
+        }
+    }
 
     int CalculateDamage(int damageAount)
     {
