@@ -35,13 +35,16 @@ public class MyShurikenThrower : MonoBehaviour
     /// <summary>
     /// 自分手裏剣1のプレハブ
     /// </summary>
-    GameObject myShuriken1_prefab;
+    GameObject InstantiatedMyShuriken1;
 
     MyShurikenThrower myShurikenThrower;
 
     [SerializeField] GameObject canvas;
 
     [SerializeField] MyShurikenArrangement myShurikenArrangement;
+
+    public delegate void MyShurikenInstantiatedEventHandler(GameObject InstantiatedMyShuriken1);
+    public event MyShurikenInstantiatedEventHandler OnMyShurikenInstantiated;
 
     #endregion
 
@@ -172,7 +175,7 @@ public class MyShurikenThrower : MonoBehaviour
         // タッチ時間取得
         // 理由：フリック時間判定のため
         float touchingTime = this.touchEndedTime - this.touchBeganTime;
-        Debug.Log("タッチ時間：" + touchingTime);
+        // Debug.Log("タッチ時間：" + touchingTime);
 
         // ①タッチ距離が0.2以上0.4以下でかつ
         // ②タッチ時間がの場合、フリックと判定する
@@ -198,7 +201,7 @@ public class MyShurikenThrower : MonoBehaviour
 
             if (0 <= flickedDirection && flickedDirection <= 180)
             {
-                OnMyShuriken1Instantiated();
+                InstantiateMyShuriken1();
                 ThrowShuriken(flickedDirection, 20.0f); 
             }
         }
@@ -245,22 +248,22 @@ public class MyShurikenThrower : MonoBehaviour
         // 移動先座標への角度におけるsinを設定
         velocityOfMoveDestination.y = Mathf.Sin(Mathf.Deg2Rad * flickedDirection) * speed;
 
-        Rigidbody2D rigidbody2D = this.myShuriken1_prefab.GetComponent<Rigidbody2D>();
+        Rigidbody2D rigidbody2D = this.InstantiatedMyShuriken1.GetComponent<Rigidbody2D>();
 
         // 複製した自分手裏剣の位置を移動したり投げたりできないようにする
         // ※確実に↑が起きないようにしている。基本はドラッグとスワイプをStandardTime.DragAndSwipeによってタッチ時間で
         // ドラッグ中はスワイプしないように、スワイプ中はドラッグしないようにしているので、起きないと思う。　←　時間があれば、後でテストする。
-        this.myShuriken1_prefab.GetComponent<MyShurikenArrangement>().enabled = false;
-        this.myShuriken1_prefab.GetComponent<MyShurikenThrower>().enabled = false;
+        this.InstantiatedMyShuriken1.GetComponent<MyShurikenArrangement>().enabled = false;
+        this.InstantiatedMyShuriken1.GetComponent<MyShurikenThrower>().enabled = false;
 
         // tan(斜辺の長さ(大きさ)とその向き == (cos(x座標), sin(y座標)))
         rigidbody2D.velocity = velocityOfMoveDestination;
     }
 
-    void OnMyShuriken1Instantiated()
+    void InstantiateMyShuriken1()
     {
         //this.myShuriken1_prefab = Instantiate(this.myShuriken1, this.myShuriken1.transform.position, Quaternion.identity);
-        this.myShuriken1_prefab = Instantiate(this.myShuriken1, this.myShurikenArrangement.Shuriken1Position, Quaternion.identity);
+        this.InstantiatedMyShuriken1 = Instantiate(this.myShuriken1, this.myShurikenArrangement.Shuriken1Position, Quaternion.identity);
 
         // これでも原点に生成された。
         //this.myShuriken1_prefab = Instantiate(this.myShuriken1, new Vector2(-1.848f, -3.945f), Quaternion.identity);
@@ -269,9 +272,13 @@ public class MyShurikenThrower : MonoBehaviour
 
         // UIをInstantiateするときはcanvasをSetParentしないと期待しない座標でInstantiateされることがある模様。
         // 参考：https://qiita.com/tibe/items/5e1ae977c31cdbec1e60
-        this.myShuriken1_prefab.transform.SetParent(this.canvas.transform, false);
+        this.InstantiatedMyShuriken1.transform.SetParent(this.canvas.transform, false);
 
         // SetParentのcanvas座標にInstantiateされているなら、これで座標修正できる？　→　できた
-        this.myShuriken1_prefab.transform.position = this.myShurikenArrangement.Shuriken1Position;
+        this.InstantiatedMyShuriken1.transform.position = this.myShurikenArrangement.Shuriken1Position;
+
+        // 敵手裏剣にダメージを与えた時の処理を登録する
+        // 理由：MyShuriken1DamageTakerにダメージを受ける処理の役割を担わせるため
+        // OnMyShurikenInstantiated(InstantiatedMyShuriken1);
     }
 }

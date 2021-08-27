@@ -4,8 +4,21 @@
     <list default="true" id="9dd3cf36-80bc-4b7d-a7be-052cac52de74" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SujiShuriken/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SujiShuriken/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/EnemyShuriken/Scripts/EnemyShurikenDamageTaker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/EnemyShuriken/Scripts/EnemyShurikenDamageTaker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/ShurikenDestroyer/Scripts/ShurikenDestroyer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/ShurikenDestroyer/Scripts/ShurikenDestroyer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/EnemyShurikenGenerator/Scripts/GenerateEnemyShuriken.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/EnemyShurikenGenerator/Scripts/GenerateEnemyShuriken.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenDamageDealer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShuriken1DamageGiver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenDamageDealer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShuriken1DamageGiver.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenThrower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenThrower.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/ShurikenDestroyer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/ShurikenDestroyer/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/ShurikenDestroyer/Scripts/ShurikenDestroyer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/ShurikenDestroyer/Scripts/ShurikenDestroyer.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/TestForThrowingMyShuriken 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/TestForThrowingMyShuriken 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documents/Sprites/Points_Original.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documents/ThrowSujiShurikenGanttChart.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Documents/ThrowSujiShurikenGanttChart.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documents/~$Design_Algorithm.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documents/~$ThrowSujiShurikenGanttChart.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documents/~$スロー数字手裏剣企画書_20210101.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documents/スロー数字手裏剣企画書_20210101.pptx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +38,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.2.18/Editor/treeview/TimelineTreeViewGUI.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenDamageDealer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShuriken1DamageTaker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShuriken1DamageGiver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file:///Applications/Unity/Hub/Editor/2019.4.22f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Tests/Runtime/MaskClipping/RectMask2DClipping.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EAE584CE-26BC-4022-9C1B-1AA476BFA589/1c/c39c2ad7/StringBuilder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file:///Applications/Unity/Hub/Editor/2019.4.22f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
@@ -35,7 +49,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EAE584CE-26BC-4022-9C1B-1AA476BFA589/00/3403dfbf/StackTrace.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EF97A857-A77F-4229-885C-0ED3B980BD37/a1/cc307008/Canvas.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B274A51D-3084-44F8-A3F3-C239CE035557/54/2fab4ac1/StackTraceUtility.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/ShurikenDestroyer/Scripts/ShurikenDestroyer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/EnemyShuriken/Scripts/OriginalFigureHolder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/Common/Scripts/GameObjectName.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B274A51D-3084-44F8-A3F3-C239CE035557/21/1d40c7c9/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/817A237D-064B-4347-A72A-677C916A1C6B/c6/af785fb5/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
@@ -62,6 +76,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EAE584CE-26BC-4022-9C1B-1AA476BFA589/f9/bfe202ac/Environment.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D76DA2C9-A45B-4B02-B93F-56AE560B1D44/04/75f6fdb6/ADB.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/58F09AA9-597A-4DC5-A992-46E500618721/8f/97433021/PopupWindowWithoutFocus.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/Timer/Sprites/˙Scripts/TimerView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file:///Applications/Unity/Hub/Editor/2019.4.22f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Graphic.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyArea_Image/Scripts/MyAreaInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B274A51D-3084-44F8-A3F3-C239CE035557/f1/47864aa2/OnDemandRendering.cs" root0="SKIP_HIGHLIGHTING" />
@@ -70,6 +85,7 @@
     <setting file="file:///Applications/Unity/Hub/Editor/2019.4.22f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Tests/Runtime/Layout/HorizonalLayoutGroupTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/02C75F60-443C-4B27-B19F-D3060D5AF6AD/a6/dabb07e6/GUIUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/58F09AA9-597A-4DC5-A992-46E500618721/0d/b880a1cc/EditorApplication.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/Timer/Sprites/˙Scripts/TimeCounter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file:///Applications/Unity/Hub/Editor/2019.4.22f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Tests/Runtime/Layout/LayoutGroupScaling.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/58F09AA9-597A-4DC5-A992-46E500618721/40/e161ab16/EditorApplicationLayout.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/58F09AA9-597A-4DC5-A992-46E500618721/77/3e467965/RootEditorUtils.cs" root0="SKIP_HIGHLIGHTING" />
@@ -93,13 +109,24 @@
       <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/58F09AA9-597A-4DC5-A992-46E500618721/0d/b880a1cc/EditorApplication.cs" />
       <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/Common/Scripts/StandardTime.cs" />
       <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenArrangement.cs" />
-      <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenThrower.cs" />
-      <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/IApplicableDamage.cs" />
       <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenDamageDealer.cs" />
       <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/Shredder/Shredder.cs" />
-      <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/EnemyShurikenGenerator/Scripts/GenerateEnemyShuriken.cs" />
       <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/ShurikenDestroyer/Scripts/ShurikenDestroyer.cs" />
+      <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/EnemyShuriken/Scripts/OriginalFigureMaintainer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Points_Image/Scripts/PointDealer.cs" />
+      <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/Timer/Sprites/˙Scripts/TimerView.cs" />
+      <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/EndStatement/Scripts/EndStamentView.cs" />
+      <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/EndStatement/Scripts/EndStatementView.cs" />
+      <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/EndStatementManager/Scripts/EndStatementView.cs" />
+      <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/EndStatementManager/Scripts/EndStatementManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShuriken1DamageDealer.cs" />
+      <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/IApplicableDamage.cs" />
+      <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShuriken1DamageGiver.cs" />
+      <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/EnemyShurikenGenerator/Scripts/GenerateEnemyShuriken.cs" />
       <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/EnemyShuriken/Scripts/EnemyShurikenDamageTaker.cs" />
+      <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShuriken1DamageTaker.cs" />
+      <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/MyShuriken/Scripts/MyShurikenThrower.cs" />
+      <option value="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/Timer/Sprites/˙Scripts/TimeCounter.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1w9hXKPkxSvuygWYpRovyDjvc31" />
@@ -113,7 +140,7 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3502036" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.32593393" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -135,10 +162,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="12310">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="12310" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -164,7 +191,8 @@
       <workItem from="1629010414641" duration="6389000" />
       <workItem from="1629417683906" duration="540000" />
       <workItem from="1629420475449" duration="1920000" />
-      <workItem from="1629512232336" duration="3869000" />
+      <workItem from="1629512232336" duration="27878000" />
+      <workItem from="1630024260667" duration="605000" />
     </task>
     <servers />
   </component>
@@ -187,50 +215,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/EnemyShuriken/Scripts/EnemyShurikenDamageTaker.cs</url>
-          <line>56</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/EnemyShuriken/Scripts/EnemyShurikenDamageTaker.cs" initialLine="56" containingFunctionPresentation="method 'OnTriggerEnter2D'">
-            <startOffsets>
-              <option value="1573" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1574" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/ShurikenDestroyer/Scripts/ShurikenDestroyer.cs</url>
-          <line>14</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/ShurikenDestroyer/Scripts/ShurikenDestroyer.cs" initialLine="14" containingFunctionPresentation="method 'Start'">
-            <startOffsets>
-              <option value="357" />
-            </startOffsets>
-            <endOffsets>
-              <option value="477" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/EnemyShuriken/Scripts/EnemyShurikenDamageTaker.cs</url>
-          <line>67</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/TestForThrowingMyShuriken/EnemyShuriken/Scripts/EnemyShurikenDamageTaker.cs" initialLine="67" containingFunctionPresentation="method 'DestroyShurikenIfHpGotTo0'">
-            <startOffsets>
-              <option value="1851" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1885" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

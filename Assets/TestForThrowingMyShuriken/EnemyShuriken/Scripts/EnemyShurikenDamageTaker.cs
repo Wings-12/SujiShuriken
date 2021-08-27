@@ -13,8 +13,10 @@ public class EnemyShurikenDamageTaker : MonoBehaviour
     [SerializeField] Text figureText = default;
 
     public delegate void Hp0ShurikenEventHandler(GameObject hp0Shuriken);
+    public event Hp0ShurikenEventHandler OnShurikenHp0;
 
-    public event Hp0ShurikenEventHandler OnShurikenHpGotTo0;
+    public delegate void EnemyShurikenDamagedEventHandler(int damageAmount);
+    public event EnemyShurikenDamagedEventHandler OnEnemyShurikenDamaged;
 
     // private void OnCollisionEnter2D(Collision2D other)
     // {
@@ -39,16 +41,23 @@ public class EnemyShurikenDamageTaker : MonoBehaviour
         {
             GameObject shuriken = other.gameObject;
 
-            var d = shuriken.GetComponent(typeof(IApplicableDamage)) as IApplicableDamage;
+            var d = shuriken.GetComponent<IApplicableDamage>();
+
             if (d != null)
             {
                 damageAount = d.ApplyDamage();
 
                 int remainingHp = CalculateDamage(damageAount);
 
-                DestroyShurikenIfHpGotTo0(remainingHp, this.gameObject);
+                DestroyShurikenIfHp0(remainingHp, this.gameObject);
 
-                ApplyDamageToText(remainingHp);
+                if (this.gameObject != null)
+                {
+                    ApplyDamageToText(remainingHp);
+                }
+
+                // ダメージ量を自分手裏剣にも反映する
+                OnEnemyShurikenDamaged(damageAount);
             }
             else
             {
@@ -57,23 +66,19 @@ public class EnemyShurikenDamageTaker : MonoBehaviour
         }
     }
 
-    void DestroyShurikenIfHpGotTo0(int remainingHp, GameObject enemyShuriken)
+    void DestroyShurikenIfHp0(int remainingHp, GameObject enemyShuriken)
     {
         if (remainingHp == 0)
         {
-            // 本当はイベント処理で手裏剣を1箇所で破棄したいが、バグっているので、ここでDestroyしている
-            //Destroy((enemyShuriken));
-
-            // データが発行されてない？
-            OnShurikenHpGotTo0(enemyShuriken);
+            OnShurikenHp0(enemyShuriken);
         }
     }
 
-    int CalculateDamage(int damageAount)
+    int CalculateDamage(int damageAｍount)
     {
         int remainingHp = int.Parse(figureText.text);
 
-       return remainingHp -= damageAount;
+       return remainingHp -= damageAｍount;
     }
 
     void ApplyDamageToText(int remainingHp)

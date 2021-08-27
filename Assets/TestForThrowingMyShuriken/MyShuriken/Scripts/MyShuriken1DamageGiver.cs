@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MyShurikenDamageDealer : MonoBehaviour, IApplicableDamage
+public class MyShuriken1DamageGiver : MonoBehaviour, IApplicableDamage
 {
     public int ApplyDamage()
     {

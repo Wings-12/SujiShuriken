@@ -37,6 +37,10 @@ public class GenerateEnemyShuriken : MonoBehaviour
     [SerializeField] Text figureText = default;
 
     private Vector2 initialEnemyShuriken = default;
+
+    public delegate void PointEventHandler(int gottenPoint);
+    public event PointEventHandler OnPointGotten;
+
     #endregion
 
     // Start is called before the first frame update
@@ -78,6 +82,8 @@ public class GenerateEnemyShuriken : MonoBehaviour
             initialEnemyShuriken,
             Quaternion.identity);
 
+
+
         // 生成した敵手裏剣の親をキャンバスにし、座標を発射座標に設定する
         // 理由：インスタンシエイトしたUIは親をキャンバスに設定しないと表示されず、
         // また、発射座標を再設定しないと、発射座標から敵手裏剣が飛ばなくなるから
@@ -91,6 +97,20 @@ public class GenerateEnemyShuriken : MonoBehaviour
         // 敵手裏剣の数字をランダムに設定
         int randomNum = (int)Math.Floor(Random.Range(1.0f, 9.0f));
         this.figureText.text = randomNum.ToString();
+
+        int originalHp = int.Parse(instantiatedEnemyShuriken.GetComponentInChildren<Text>().text);
+
+        instantiatedEnemyShuriken.GetComponent<OriginalFigureHolder>().maxHp = originalHp;
+
+        this.instantiatedEnemyShuriken.GetComponent<EnemyShurikenDamageTaker>().OnShurikenHp0 += enemyShuriken =>
+        {
+            // 敵手裏剣を破壊した時にもともとのHPぶん得点する
+            int gottenPoint = enemyShuriken.GetComponent<OriginalFigureHolder>().maxHp;
+            OnPointGotten(gottenPoint);
+
+            // インスタンシエントされた手裏剣のHPが0になった時に手裏剣を破棄登録
+            Destroy(enemyShuriken);
+        };
 
         // 敵手裏剣へ瞬間的に力を加えて右方向に飛ばす
         Vector2 force = new Vector2(Random.Range(-0.5f, 0.5f), -1.0f);
